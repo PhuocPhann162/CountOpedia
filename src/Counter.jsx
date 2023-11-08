@@ -65,6 +65,8 @@ class Counter extends React.Component {
     this.setState(() => {
       return {
         count: 0,
+        lastPlay: "",
+        gameStatus: "",
       };
     });
   };
@@ -91,7 +93,7 @@ class Counter extends React.Component {
     if (this.state.count >= 10 || this.state.count <= -10) {
       return { display: "none" }; 
     } else {
-      return {}; 
+      return {};
     }
   };
 
